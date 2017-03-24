@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/dialog_text" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/imageView_cropped" android:layout_width="200.0dip" android:layout_height="100.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/textView2" android:layout_centerHorizontal="true" />
+    <LinearLayout android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/imageView_cropped">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/button_adavanced" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/selector_button_advanceedit_small" android:onClick="onCancel" />
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Advance Edit" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/button_close" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/selector_buttoncancel" android:text="Done" android:onClick="onDone" />
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/textView4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cancel" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/button_done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/selector_buttondone_dialog" android:text="Done" android:onClick="onDone" />
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/textView5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Done" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

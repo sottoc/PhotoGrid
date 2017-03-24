@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_textures" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/layouttopBarFreeHand" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0" android:layout_below="@id/seekbar_layout" android:layout_centerVertical="true">
+        <RelativeLayout android:gravity="center" android:id="@id/imageViewBrushSize" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onClick">
+            <TextView android:textColor="@android:color/white" android:id="@id/textLabelBrush" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Brush size" android:singleLine="true" android:layout_below="@id/imageViewBrush" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/imageViewBrush" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_brush_btn" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/imageViewColorbtn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onClick">
+            <TextView android:textColor="@android:color/white" android:id="@id/textLabelonColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Color" android:singleLine="true" android:layout_below="@id/imageViewColor" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/imageViewColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_color_btn" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/imageViewUndoClick" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onClick">
+            <TextView android:textColor="@android:color/white" android:id="@id/textLabelonUndo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Undo" android:singleLine="true" android:layout_below="@id/imageViewUndo" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/imageViewUndo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_undo_btn" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/imageViewRedoClick" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onClick">
+            <TextView android:textColor="@android:color/white" android:id="@id/textLabelonRedo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Redo" android:singleLine="true" android:layout_below="@id/imageViewRedo" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/imageViewRedo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_redo_btn" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/imageViewDoneClick" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onClick">
+            <TextView android:textColor="@android:color/white" android:id="@id/textLabelDone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Done" android:singleLine="true" android:layout_below="@id/imageViewDone" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/imageViewDone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_done_btn" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/seekbar_layout" android:background="@android:color/black" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <SeekBar android:id="@id/seekbar_brushsize" android:paddingLeft="7.0dip" android:paddingTop="2.0dip" android:paddingRight="7.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/progress_background" android:thumb="@drawable/thumb_transprancy" android:paddingStart="7.0dip" android:paddingEnd="7.0dip" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/LinearLayout1" android:background="@drawable/bg_dialoge" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/layoutGallary" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/GalleryBtn" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:src="@drawable/selector_gallery" android:layout_weight="1.0" android:onClick="onGallery" />
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gallery" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layoutCamera" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/cameraBtn" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:src="@drawable/selector_camera" android:layout_weight="1.0" android:onClick="onCamera" />
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/camera" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/layoutFacebook" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/facebookBtn" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:src="@drawable/selector_fb" android:layout_weight="1.0" android:onClick="onFacebook" />
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/facebook" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layoutInstagram" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/instagramBtn" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:src="@drawable/selector_instagram" android:layout_weight="1.0" android:onClick="onInstagram" />
+            <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/instagram" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+</LinearLayout>

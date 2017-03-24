@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_maincut" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <com.km.photogridbuilder.cut.EraseView android:id="@id/sticker" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:id="@id/linearLayout1" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/relativeLayoutActivityStickerInfo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <TextView android:textSize="@dimen/text_size" android:textColor="@android:color/white" android:id="@id/textViewActivityStickerInfoSticker" android:background="@drawable/bg_notification" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/label_screen_2_sticker" />
+            <ImageButton android:id="@id/imageButtonActivityStickerCloseNotification" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="onClick" android:contentDescription="@string/label_screen_2_sticker" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageButton android:id="@id/imageButtonIcDone" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@drawable/selector_buttondone" android:onClick="onClick" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/linearLayout_tools" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/linearLayout1">
+        <SeekBar android:id="@id/seekBarBrushSize" android:background="@drawable/bg_seekbarcut" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxHeight="3.0dip" android:progressDrawable="@drawable/progresscut" android:minHeight="3.0dip" android:thumb="@drawable/thumb" android:thumbOffset="10.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:id="@id/linearLayout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/imageView_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/btn_brush_selected" android:layout_weight="1.0" android:onClick="onSizeClick" />
+            <ImageView android:id="@id/imageView_undo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/selector_undo_btn" android:layout_weight="1.0" android:onClick="onUndoClick" />
+            <ImageView android:id="@id/imageView_redo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/selector_redo_btn" android:layout_weight="1.0" android:onClick="onRedoClick" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/linearLayout4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/imageView_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_delete_selected" android:onClick="onDeleteClick" />
+        <ImageView android:id="@id/imageView_zoom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_zoom_normal" android:onClick="onZoomClick" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/thumbImage" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_margin="5.0dip" android:src="@drawable/defaultpic_insta" />
+        <TextView android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center" android:id="@id/txtUsr" android:background="@drawable/blurbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

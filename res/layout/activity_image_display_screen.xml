@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageview_showimage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/ctrbuttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/btdelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/delete" android:layout_alignParentLeft="true" android:onClick="onDelete" />
+        <ImageView android:id="@id/btshare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share" android:layout_alignParentRight="true" android:onClick="onShare" />
+    </RelativeLayout>
+</RelativeLayout>

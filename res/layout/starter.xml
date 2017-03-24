@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/backer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="8.0" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0">
+        <LinearLayout android:gravity="right" android:id="@id/textins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/btnView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/settings" android:onClick="onSettigClicked" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/buttonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_below="@id/textins">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_weight="1.0" android:onClick="onGrid">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/textLabelonGrid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Create Collage" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/imageLabel6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/create" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@id/textLabelonGrid" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_weight="1.0" android:onClick="onViewCreations">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/textLabelonFree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="View Collages" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/viewcollage" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@id/textLabelonFree" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/lowads2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <RelativeLayout android:id="@id/ad1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onAd1">
+            <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/textLabel1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Face Decorator" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/imageLabel1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/face" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@id/textLabel1" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/ad2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onAd2">
+            <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/textLabel2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Nature Frames" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/imageLabel2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/nature" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@id/textLabel2" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/ad4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onAd4">
+            <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/textLabel4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Voice Camera" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/imageLabel4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/voice" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@id/textLabel4" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/lowads" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <RelativeLayout android:id="@id/ad3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onAd3">
+            <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/textLabel3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Dragon Me" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/imageLabel3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/dragon" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@id/textLabel3" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/ad5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onAd5">
+            <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/textLabel5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Waterfalls Frames" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/imageLabel5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/waterfalls" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@id/textLabel5" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/ad6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="onAd6">
+            <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/textLabel6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Beach Frames" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/imageLabel6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/beach" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@id/textLabel6" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

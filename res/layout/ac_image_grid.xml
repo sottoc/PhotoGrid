@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topdoneAlbum" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/topdoneButton_gallery" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:onClick="onDoneGallery">
+                <TextView android:textSize="18.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/counter_txtView" android:background="@drawable/bg_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="0" />
+                <TextView android:textSize="16.0dip" android:layout_gravity="center" android:id="@id/endCloseButton_gallery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Done" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <GridView android:gravity="center" android:id="@id/gridview" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:horizontalSpacing="4.0dip" android:verticalSpacing="2.0dip" android:stretchMode="columnWidth" android:columnWidth="100.0dip" android:numColumns="auto_fit" android:layout_below="@id/topdoneAlbum" />
+</RelativeLayout>

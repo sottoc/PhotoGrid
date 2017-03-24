@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layoutBottomExpanded" android:background="@drawable/bg_text" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="18.0dip" android:textColor="@android:color/white" android:id="@id/editText" android:background="@drawable/inputtextfield" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_dummy" android:hint="@string/hint_enter_text" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <requestFocus />
+    </EditText>
+    <TextView android:textSize="18.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/textViewPreview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Preview" android:singleLine="true" android:layout_below="@id/editText" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/LayoutSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:weightSum="5.0" android:layout_below="@id/textViewPreview">
+        <Spinner android:id="@id/spinner" android:background="@drawable/spinner_selectfont" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:popupBackground="@android:color/black" android:layout_weight="2.5" android:spinnerMode="dropdown" />
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.3" />
+        <Spinner android:id="@id/spinnerFontSize" android:background="@drawable/spinner_fontsize" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:popupBackground="@android:color/black" android:layout_weight="1.5" android:spinnerMode="dropdown" />
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.3" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/white" android:id="@id/textViewColor" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_color" android:drawableRight="@drawable/ic_colorpicker" android:drawablePadding="1.0dip" android:layout_weight="0.3" android:layout_below="@id/LayoutSpinner" android:layout_alignLeft="@id/LayoutSpinner" android:onClick="onClick" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/buttonslay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/LayoutSpinner">
+        <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/buttonDone" android:background="@drawable/selector_button" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/button_label_done_text" android:onClick="onClick" />
+    </LinearLayout>
+</RelativeLayout>

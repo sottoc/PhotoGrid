@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/bg_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="21.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/textViewmessagePhotoSource" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Choose Photo Source: " />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_chosephotosource" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/galleryLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/imageGallary" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_gallery_selected" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Gallery" android:layout_toRightOf="@id/imageGallary" android:layout_toEndOf="@id/imageGallary" />
+                <CheckBox android:id="@id/gallery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/checkmark_selected_phone" android:text="" android:layout_alignParentRight="true" android:onClick="onCheckboxClicked" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cameraLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/imageCamera" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_camera_selected" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Camera" android:layout_toRightOf="@id/imageCamera" android:layout_toEndOf="@id/imageCamera" />
+                <CheckBox android:id="@id/camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/checkmark_selected_phone" android:text="" android:layout_alignParentRight="true" android:onClick="onCheckboxClicked" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/facebookLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/imageFacebook" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_facebook_normal" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Facebook" android:layout_toRightOf="@id/imageFacebook" android:layout_toEndOf="@id/imageFacebook" />
+                <CheckBox android:id="@id/facebook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/checkmark_selected_phone" android:text="" android:layout_alignParentRight="true" android:onClick="onCheckboxClicked" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/instagramLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/imageInstagram" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_instagram_selected" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Instagram" android:layout_toRightOf="@id/imageInstagram" android:layout_toEndOf="@id/imageInstagram" />
+                <CheckBox android:id="@id/instagram" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/checkmark_selected_phone" android:text="" android:layout_alignParentRight="true" android:onClick="onCheckboxClicked" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="32.0dip" android:textStyle="bold|italic" android:textColor="#fffc0000" android:id="@id/textWarn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0px" android:text="You do not have any collages. Please Create by selecting Collage style and Photos." android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+    <GridView android:gravity="center" android:id="@id/gridView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:drawSelectorOnTop="true" android:verticalSpacing="5.0dip" android:stretchMode="columnWidth" android:numColumns="auto_fit" />
+</RelativeLayout>
